@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed Asim — Computer Science student at UMT. Web development, app development, cloud computing, and AI." />
+  <title>Ahmed's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">&lt;AA /&gt;</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="status-dot"></span>
+            Available for internships & collaborations
+          </p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="gradient-text">Ahmed Asim</span>
+          </h1>
+          <p class="hero__subtitle">
+            CS Student @ UMT · 6th Semester ·
+            <span id="typedText"></span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero__desc">
+            22-year-old computer science student passionate about web development,
+            app development, cloud computing, and artificial intelligence. I enjoy
+            building real applications while strengthening my foundation in algorithms,
+            databases, and software engineering.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/ahmedverse-asynx" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-asim-188054360/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:ahmedaaim288490@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="code-window__body"><code><span class="kw">const</span> developer = {
+  <span class="prop">name</span>: <span class="str">"Ahmed Asim"</span>,
+  <span class="prop">age</span>: <span class="num">22</span>,
+  <span class="prop">university</span>: <span class="str">"UMT"</span>,
+  <span class="prop">semester</span>: <span class="num">6</span>,
+  <span class="prop">skills</span>: [<span class="str">"C++"</span>, <span class="str">"JS"</span>, <span class="str">"HTML/CSS"</span>],
+  <span class="prop">interests</span>: [<span class="str">"Web"</span>, <span class="str">"AI"</span>, <span class="str">"Cloud"</span>],
+  <span class="prop">coffee</span>: <span class="kw">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">01</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I'm <strong>Ahmed Asim</strong>, a <strong>22-year-old</strong>
+              <strong>Computer Science student</strong> at the
+              <em>University of Management and Technology (UMT)</em>, currently in my
+              <strong>6th semester</strong>. My coursework spans programming fundamentals,
+              object-oriented programming, data structures, algorithms, databases,
+              data mining, and software engineering.
+            </p>
+            <p>
+              I'm especially drawn to <strong>web development</strong>,
+              <strong>app development</strong>, <strong>cloud computing</strong>, and
+              <strong>artificial intelligence</strong> — and I enjoy connecting classroom
+              theory with hands-on projects using C++, JavaScript, HTML, CSS, MySQL, and MongoDB.
+            </p>
+            <ul class="about__facts">
+              <li>
+                <span class="about__fact-label">Education</span>
+                <span>B.S. Computer Science — University of Management and Technology</span>
+              </li>
+              <li>
+                <span class="about__fact-label">Status</span>
+                <span>6th Semester · Age 22</span>
+              </li>
+              <li>
+                <span class="about__fact-label">Interests</span>
+                <span>Web Dev · App Dev · Cloud Computing · AI</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__num">22</span>
+              <span class="stat-card__label">Years old</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">6th</span>
+              <span class="stat-card__label">Semester at UMT</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">6</span>
+              <span class="stat-card__label">Languages & markup</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">2</span>
+              <span class="stat-card__label">Databases</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">02</span>
+          <h2 class="section__title">Skills & Tools</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-category">
+            <h3>Languages & Markup</h3>
+            <div class="skill-tags">
+              <span>C++</span><span>JavaScript</span><span>Assembly</span>
+              <span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-tags">
+              <span>MySQL</span><span>MongoDB</span><span>SQL Queries</span>
+              <span>Database Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Coursework & Concepts</h3>
+            <div class="skill-tags">
+              <span>OOP</span><span>Data Structures</span><span>Algorithms</span>
+              <span>Programming Fundamentals</span><span>Software Engineering</span>
+              <span>Data Mining</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Areas of Interest</h3>
+            <div class="skill-tags">
+              <span>Web Development</span><span>App Development</span>
+              <span>Cloud Computing</span><span>Artificial Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">03</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__desc">Academic and personal work aligned with my skills — more on <a href="https://github.com/ahmedverse-asynx" target="_blank" rel="noopener">GitHub</a>.</p>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card project-card--featured">
+            <div class="project-card__header">
+              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <div class="project-card__links">
+                <a href="projects/smart-banking/" aria-label="View project details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></a>
+                <a href="projects/smart-banking/smart_banking.exe" download aria-label="Download executable"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+                <a href="https://github.com/ahmedverse-asynx/smart-banking-system" target="_blank" rel="noopener" aria-label="GitHub repository"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Smart Banking Management System</h3>
+            <p class="project-card__desc">
+              Console-based C++ banking app with OOP, inheritance, polymorphism, and STL (vector & map).
+              Features account creation, login, deposit/withdraw, transfers, transaction history,
+              loan EMI calculator, admin panel, and ATM simulation. Includes downloadable .exe.
+            </p>
+            <div class="project-card__tags">
+              <span>C++</span><span>OOP</span><span>STL</span><span>Console App</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+              <div class="project-card__links">
+                <a href="#contact" aria-label="View project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Personal Portfolio Website</h3>
+            <p class="project-card__desc">
+              Dark-themed responsive portfolio showcasing my skills, education at UMT,
+              and interests in web development, cloud, and AI. Built with vanilla HTML, CSS, and JavaScript.
+            </p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+              <div class="project-card__links">
+                <a href="#contact" aria-label="View project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Database Management System</h3>
+            <p class="project-card__desc">
+              Academic project applying database design principles with relational schemas,
+              queries, and data integrity — built using MySQL and software engineering concepts.
+            </p>
+            <div class="project-card__tags">
+              <span>MySQL</span><span>Database Design</span><span>Software Engineering</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+              <div class="project-card__links">
+                <a href="#contact" aria-label="View project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Data Mining Analysis</h3>
+            <p class="project-card__desc">
+              Coursework project exploring pattern discovery and data preprocessing techniques
+              from my data mining studies — turning raw data into meaningful insights.
+            </p>
+            <div class="project-card__tags">
+              <span>Data Mining</span><span>Algorithms</span><span>Analysis</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+              <div class="project-card__links">
+                <a href="#contact" aria-label="View project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              </div>
+            </div>
+            <h3 class="project-card__title">DSA Algorithm Visualizer</h3>
+            <p class="project-card__desc">
+              Interactive web tool visualizing sorting and searching algorithms step-by-step,
+              reinforcing data structures and algorithms coursework.
+            </p>
+            <div class="project-card__tags">
+              <span>JavaScript</span><span>HTML/CSS</span><span>Data Structures</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section section--alt" id="interests">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">04</span>
+          <h2 class="section__title">Interests</h2>
+          <p class="section__desc">Tech I'm passionate about — and what I enjoy outside of coding.</p>
+        </div>
+        <div class="interests__grid interests__grid--eight">
+          <div class="interest-card">
+            <span class="interest-card__emoji">🌐</span>
+            <h3>Web Development</h3>
+            <p>Building responsive, modern websites and web apps with HTML, CSS, and JavaScript — from layout to interactivity.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">📱</span>
+            <h3>App Development</h3>
+            <p>Creating software applications for users — learning mobile and desktop patterns to ship useful products.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">☁️</span>
+            <h3>Cloud Computing</h3>
+            <p>Exploring scalable infrastructure, deployment, and cloud services to run applications reliably at scale.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">🤖</span>
+            <h3>Artificial Intelligence</h3>
+            <p>Studying intelligent systems, machine learning concepts, and how AI can solve real-world problems.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">💪</span>
+            <h3>Gym</h3>
+            <p>Staying active and building discipline through regular workouts — balance for a healthy mind and body.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">🏊</span>
+            <h3>Swimming</h3>
+            <p>A refreshing way to unwind, stay fit, and clear my head after long study or coding sessions.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">✍️</span>
+            <h3>Writing</h3>
+            <p>Expressing ideas on paper — whether notes, reflections, or creative writing beyond code.</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-card__emoji">🎬</span>
+            <h3>Movies & Coffee</h3>
+            <p>Catching great films with a good cup of coffee — my go-to way to relax and recharge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact__box">
+          <div class="section__header section__header--center">
+            <span class="section__tag">05</span>
+            <h2 class="section__title">Let's Connect</h2>
+            <p class="section__desc">
+              Open to internships, freelance work, and collaborations in web development,
+              app development, cloud, and AI. Reach out — I'd love to connect.
+            </p>
+          </div>
+          <div class="contact__actions">
+            <a href="mailto:ahmedaaim288490@gmail.com" class="btn btn--primary btn--lg" id="emailBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              ahmedaaim288490@gmail.com
+            </a>
+            <a href="https://github.com/ahmedverse-asynx" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" id="githubBtn">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-asim-188054360/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" id="linkedinBtn">
+              LinkedIn
+            </a>
+          </div>
+          <p class="contact__note">GitHub: <a href="https://github.com/ahmedverse-asynx" target="_blank" rel="noopener">@ahmedverse-asynx</a> · <a href="https://www.linkedin.com/in/ahmed-asim-188054360/" target="_blank" rel="noopener">LinkedIn</a> · Email: <a href="mailto:ahmedaaim288490@gmail.com">ahmedaaim288490@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed & built by <span class="gradient-text">Ahmed Asim</span></p>
+      <p class="footer__year">&copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
